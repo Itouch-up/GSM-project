@@ -60,24 +60,19 @@
         }
     </style>
     <script>
-        function result(argFun)
+        function check(box)
         {
-            if(argFun==0)
+            if(box.checked==false)
             document.body.style.backgroundColor='white',document.body.style.color='black';
-            else if(argFun==1)
+            else
             document.body.style.backgroundColor='rgb(27,27,27)',document.body.style.color='white';
         }
-        // function changeText()
-        // {
-            
-        // }
     </script>
 </head>
 <body id="bodytag">
     <header>
         <div class="bg">
-            <input type="button" value="White" onclick="result(0);">
-            <input type="button" value="black" onclick="result(1);">
+            Night mode<input type="checkbox" value="Night mode" onclick="check(this)">
         </div>
         <h1><a href="index.html">Web</h1></a>
         
