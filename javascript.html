@@ -4,14 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li{
+            
+            font-size: 20px;
+        }
+        h1{
+            border-bottom: rgb(255, 0, 0) 5px solid;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        ol{
+            border-right: red 5px dotted;
+            margin-top: 0px;
+        }
+        #contain
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 82px;
+            border-bottom: red solid 5px;
+        }
+        article h4{
+            padding-left:10px;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Web</h1></a>
+        <a href="index.html"><h1>Web</h1></a>
     </header>
     <article>
-        <h1>JavaScript</h1>
-        JavaScript is ............
+        <div id="contain">
+            <ol>
+                <li><a href="html.html">html</a></li>
+                <li><a href="css.html">css</a></li>
+                <li><a href="javascript.html">javascript</a></li>
+            </ol>
+        <h4>JavaScript</h4>
+        </div>
+        1+1<br>
+        <script>
+            document.write(1+1);
+        </script>
     </article>
     <footer>
         JavaScript

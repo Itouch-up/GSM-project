@@ -4,13 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css</title>
+    <style>
+        li
+        {
+            font-size: 20px;
+            color: powderblue;
+        }
+        h1{
+            border-bottom: rgb(255, 0, 0) 5px solid;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        ul{
+            border-right: red 5px dotted;
+            margin-top: 0px;
+        }
+        #contain
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        article h4{
+            padding-left:10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Web</h1></a>
+        <a href="index.html"><h1>Web</h1></a>
     </header>
-    <article>
-        <h1>css</h1>
+    <article> 
+        <div id="contain">
+            <ul>
+                <li style="color: purple;"><a href="html.html">html</a></li>
+                <li><a href="css.html">css</a></li>
+                <li><a href="javascript.html">javascript</a></li>
+            </ul>
+            <h4>CSS</h4>
+            </div>
+          <!-- <ul>
+            <li><font color="red">html</font></li>
+            <li><font color="green">css</font></li>
+            <li><font color="brown">JS</font></li>
+        </ul>-->
         css is .............
     </article>
     <footer>

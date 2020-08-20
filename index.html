@@ -4,20 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            /* background-image: url("https://source.unsplash.com/1600x900/?web,code"); */
+            font-family: 'Merriweather', serif;
+            text-shadow: powderblue 1px 1px 1px;
+        }
+        li
+        {
+            
+            font-size: 20px;
+        }
+        h1{
+            border-bottom: rgb(255, 0, 0) 5px solid;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        #contain ol{
+            border-right: red 5px dotted;
+            margin-top: 0px;
+        }
+        #contain
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: double red 5px;
+            height: 82px;
+        }
+        article h4{
+            padding-left:10px;
+        }
+        #contents
+        {
+            border: black 3px double;
+            display: inline-block;
+            background-color: darkgray;
+        }
+        div span
+        {
+            padding: 36%;
+        }
+        a:link
+        {
+            color: royalblue;
+        }
+        a:visited
+        {
+            color: seagreen;
+        }
+        .bg
+        {
+            float: right;
+        }
+    </style>
+    <script>
+        function result(argFun)
+        {
+            if(argFun==0)
+            document.body.style.backgroundColor='white',document.body.style.color='black';
+            else if(argFun==1)
+            document.body.style.backgroundColor='rgb(27,27,27)',document.body.style.color='white';
+        }
+        // function changeText()
+        // {
+            
+        // }
+    </script>
 </head>
-<body>
+<body id="bodytag">
     <header>
+        <div class="bg">
+            <input type="button" value="White" onclick="result(0);">
+            <input type="button" value="black" onclick="result(1);">
+        </div>
         <h1><a href="index.html">Web</h1></a>
+        
     </header>
     <article>
-
-        <ol>
-            <li><a href="html.html">html</a></li>
-            <li><a href="css.html">css</a></li>
-            <li><a href="javascript.html">javascript</a></li>
+        <div id="contain">
+            <ol>
+                <li><a href="html.html">html</a></li>
+                <li><a href="css.html">css</a></li>
+                <li><a href="javascript.html">javascript</a></li>
             </ol>
         <h4>WWW is World Wide Web</h4>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <p>The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hypertext, and are accessible over the Internet. The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP) and may be accessed by users by a software application called a web browser and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-existed the Web in some form by over two decades and upon whose technologies the Web is built.</p>
+        <p>English engineer and computer scientist Sir Timothy John Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser in 1990 while employed at CERN near Geneva, Switzerland. The browser was released outside CERN to other research institutions starting in January 1991, and then to the general public in August 1991. The World Wide Web has been central to the development of the Information Age, and is the primary means for billions of people to interact via the Internet.</p>
+        <p>Web resources may be any type of downloaded media, but web pages are hypertext documents formatted in Hypertext Markup Language (HTML). Special HTML syntax displays embedded hyperlinks with URLs which permits users to navigate to other web resources. In addition to text, web pages may contain references to images, video, audio, and software components which are either displayed or internally executed in the user's web browser to render pages or streams of multimedia content.</p>
+        <p>Multiple web resources with a common theme and usually a common domain name, make up a website. Websites are stored in computers that are running a web server, which is a program that responds to requests made over the Internet from web browsers running on a user's computer. Website content can be provided by a publisher, or interactively from user-generated content. Websites are provided for a myriad of informative, entertainment, commercial, and governmental reasons.</p>
+        <div id="contents">
+            <span>contents</span>
+            <ol>
+                <li>
+                    History
+                </li>
+                <li>
+                    Function
+                    <ul>
+                        <li>HTML</li>
+                        <li>Linking</li>
+                        <li>WWW prefix</li>
+                        <li>Scheme specifiers</li>
+                        <li>Pages</li>
+                        <ul>
+                            <li>Static page</li>
+                            <li>Dynamic pages</li>
+                        </ul>
+                        <li>Website</li>
+                        <li>Browser</li>
+                        <li>Server</li>
+                        <li>Cookie</li>
+                        <li>Search engine</li>
+                        <li>Deep web</li>
+                        <li>Caching</li>
+                    </ul>
+                </li>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Standards</li>
+                <li>Accessibility</li>
+                <li>Internationalisation</li>
+                <li>See also</li>
+            </ol>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/BzPK1sgGvE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </article>
